@@ -22,10 +22,10 @@ Latency benchmarks use 10 warmup calls followed by 1,000 timed inference calls.
 
 | Format | Model file | Size | Mean latency | P50 latency | P99 latency | Accuracy |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| PyTorch | `model.pt` | 2.56 MB | 0.0898 ms | 0.0905 ms | 0.1895 ms | Not measured |
-| ONNX Runtime | `image_classifier_model.onnx` | 2.56 MB | 0.0531 ms | 0.0532 ms | 0.1226 ms | Not measured |
-| Keras | `model.keras` | 1.19 MB | Not benchmarked | Not benchmarked | Not benchmarked | 89.30% |
-| LiteRT/TFLite INT8 | `model.tflite` | 0.10 MB | 0.0048 ms | 0.0043 ms | 0.0099 ms | 89.34% |
+| PyTorch | `model.pt` | 2.56 MB | 0.1093 ms | 0.1042 ms | 0.2641 ms | 88.09% |
+| ONNX Runtime | `image_classifier_model.onnx` | 2.56 MB | 0.0475 ms | 0.0396 ms | 0.1203 ms | 88.09% |
+| Keras | `model.keras` | 1.19 MB | 52.9581 ms | 49.8232 ms | 88.0902 ms | 89.30% |
+| LiteRT/TFLite INT8 | `model.tflite` | 0.10 MB | 0.0043 ms | 0.0043 ms | 0.0048 ms | 89.34% |
 
 Accuracy drop after INT8 quantisation:
 
